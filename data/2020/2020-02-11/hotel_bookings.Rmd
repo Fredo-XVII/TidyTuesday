@@ -1,0 +1,13 @@
+---
+title: "Hote Bookings"
+output: html_notebook
+---
+
+# 
+
+## Hotel Data
+hotels <- tidytuesdayR:
+
+curl http://browserconfig.target.com/tgt-certs/tgt-ca-bundle.crt -o /c/Users/Z001C9V/Documents/tgt-ca-bundle.crt
+export SSL_CERT_FILE=/c/Users/Z001C9V/Documents/tgt-ca-bundle.crt
+export SSL_CERT_FILE=/c/Users/Z001C9V/Documents/tgt-ca-bundle.crt

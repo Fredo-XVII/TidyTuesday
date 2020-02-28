@@ -1,4 +1,5 @@
-
+curl --cacert C:/Users/Z001C9V/Documents/tgt-ca-bundle.crt https://www.python.org -I
+openssl s_client -connect www.python.com:443 -CAfile C:/Users/Z001C9V/Documents/tgt-ca-bundle.crt 
 # Some potential data sources ---------------------------------------------
 
 
@@ -13,6 +14,7 @@ library(rvest)
 url_wsj <- "https://raw.githubusercontent.com/WSJ/measles-data/master/all-measles-rates.csv"
 
 wsj <- read_csv(url_wsj)
+wsj_file <- download.file(url_wsj, destfile = )
 
 list_of_urls <- "https://github.com/WSJ/measles-data/tree/master/individual-states"
 
@@ -37,4 +39,8 @@ clean_states <- all_states %>%
 wsj %>% 
   left_join(clean_states, by = c("name", "state")) %>% 
   write_csv(here::here("2020","2020-02-25","measles.csv"))
+
+### Import CSV
+
+measles <- read_csv('measles.csv')
 
